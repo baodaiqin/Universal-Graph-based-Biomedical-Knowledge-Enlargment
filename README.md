@@ -9,7 +9,7 @@ To identify biomedical concepts in textual corpus, we apply [Scispacy](https://a
 
 To predict potentially related candidate concepts and generate the supporting explanation (Reasoning Path), we, firstly, represent the large amount of knowledge extracted from existing structured knowledge base and unstructured text as a **Universal Knowledge Graph**. In the **Universal Knowledge Graph**, each node represents the UMLS concept and each edge indicates a UMLS relationship or a textual relationship, as shown in Figure3. In addition, we will incorporate Multi-modal data such as molecular structure into the **Universal Knowledge Graph** in the future.
 
-<img src="overview.png" width="700">
+<img src="overview.png" width="600">
 (Figure3)
 
 Next, our system relies on a state-of-the-art Tail Prediction Model (Takahashi et al., 2018) that learns to project **Universal Knowledge Graph** into a same continuous vector space and predicts the candidate concepts based on the vector calculation. 
