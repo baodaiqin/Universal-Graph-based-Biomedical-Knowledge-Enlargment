@@ -45,7 +45,7 @@ In order to support biomedical research on COVID-19 with information science, we
 ]
 ~~~
 ### An example:
-Our system hypothesizes that "COVID-19 may_be_treated_by Chloroquine". The hypothesis is proposed based on multiple reasoning paths such as shown above. The hypothesis is recently shown to be promising by the [paper](https://www.kansensho.or.jp/uploads/files/topics/2019ncov/covid19_casereport_200519_2.pdf), which is published on [The Japanese Association for Infectious Diseases](http://www.kansensho.or.jp).
+Our system hypothesizes that "COVID-19 may_be_treated_by Chloroquine". The hypothesis is proposed based on multiple reasoning paths such as shown above. The hypothesis is recently shown to be promising by the [paper](https://www.kansensho.or.jp/uploads/files/topics/2019ncov/covid19_casereport_200519_2.pdf), which is published on [The Japanese Association for Infectious Diseases](https://www.kansensho.or.jp/).
 
 ### Disclaimer:
 The dataset is NOT for clinical usage! The dataset is ONLY for academic use, with no warranty or liability.
