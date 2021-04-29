@@ -11,24 +11,24 @@ In order to support biomedical research on COVID-19 with information science, we
 ~~~
 [
     {
-        "head":
-        "head_name":
-        "tail":
-        "tail_name":
-        "relation":
-        "score":
+        "head": 'C0000000'
+        "head_name": 'COVID-19'
+        "tail": 'C0008269'
+        "tail_name": 'chloroquine'
+        "relation": 'may_be_treated_by'
+        "score": 0.625663
         "evidences": [
                         {
-                        "ATT":
-                        "HOP1":
-                        "PMID1":
-                        "PCMID1":
-                        "HOP2":
-                        "PMID2":
-                        "PCMID2":
-                        "HOP3":
-                        "PMID3":
-                        "PCMID3":
+                        "ATT": 0.2613531
+                        "HOP1": 'moderate and Severe COVID-19///C0000000#ent patients have a higher number of CD21 \u2212 CD27_\u2212_B_cells///C1824668#ent HDs .'
+                        "PMID1": ''
+                        "PCMID1": 'PMC7843151'
+                        "HOP2":'CD27///C1824668#ent is a transmembrane disulfide-linked 55-kD homodimer present on most peripheral_blood_T_cells///C0005773#ent on a subset'
+                        "PMID2": '8634448'
+                        "PCMID2": ''
+                        "HOP3": 'antihistamines and chloroquine///C0008269#ent with blood platelets polymorphonuclear leukocytes resulted in different alterations of regulatory functions these blood_cells///C0005773#ent'
+                        "PMID3": '16842209'
+                        "PCMID3": ''
                         },
                         {...}, ....
                      ]
