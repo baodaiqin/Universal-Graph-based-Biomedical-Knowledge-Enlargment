@@ -1,1 +1,1 @@
-# Universal-Graph-based-Biomedical-Knowledge-Enlargment
+# Universal-Knowledge-Graph-based-Biomedical-Knowledge-Enlargment
