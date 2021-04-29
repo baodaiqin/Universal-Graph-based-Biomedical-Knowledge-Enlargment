@@ -56,21 +56,21 @@ To predict potentially related candidate concepts and generate the supporting ex
 
 Next, our system relies on a state-of-the-art Tail Prediction Model (Takahashi et al., 2018) that learns to project **Universal Knowledge Graph** into a same continuous vector space and predicts the candidate concepts based on the vector calculation. 
 
-Then, our system searches the multi-hop reasoning paths that connect the candidate and target concept over the **Universal Knowledge Graph**. Finally, our system applies a new Relation Prediction Model (Dai et al., 2019, 2021) to classify (or reexamine) the relationship between target and candidate concepts based on the multi-hop reasoning paths and evaluate the contribution of each path via a Knowledge Graph based attention mechanism.
+Then, our system searches the multi-hop reasoning paths that connect the candidate and target concept over the **Universal Knowledge Graph**. Finally, our system applies a new Relation Prediction Model (Dai et al., 2019, 2021) to classify (or reexamine) the relationship (a.k.a, relation classification) between target and candidate concepts based on the multi-hop reasoning paths and evaluate the contribution of each path via a Knowledge Graph based attention mechanism.
 
 ### Evalute the performance of the relation classification:
 - Download the [Dataset](http://www.cl.ecei.tohoku.ac.jp/~dq/Data_for_M_CREST/RE_data/origin_data.zip) and unzip it in the main directory.
-- Then, run the following commands for preprocessing, or you can download the preprocessed dataset from here: part1 and part2, and unzip their contents under `biomedical_part1` and `biomedical_part2` directory respectively. 
+- Then, run the following commands for preprocessing, or you can download the preprocessed dataset from here: [part1](http://www.cl.ecei.tohoku.ac.jp/~dq/Data_for_M_CREST/RE_data/biomedical_part1.zip) and p[art2](http://www.cl.ecei.tohoku.ac.jp/~dq/Data_for_M_CREST/RE_data/biomedical_part2.zip), and unzip their contents under `biomedical_part1` and `biomedical_part2` directory respectively. 
 ~~~
 python2 initialize_biomedical_part1.py
 python2 initialize_biomedical_part2.py
 ~~~
-- Download our pretrained model's parameters from Data and put them under `ugdsre_biomedical/model`, and test the model via following command.
+- Download our pretrained model's [parameters](http://www.cl.ecei.tohoku.ac.jp/~dq/Data_for_M_CREST/RE_data/model.zip) and put them under `ugdsre_biomedical/model`, and test the model via following command.
 ~~~
 cd ugdsre_biomedical
 CUDA_VISIBLE_DEVICES=0 python test_baseline.py testing
 ~~~
-- The Precison on the current testing data, which is a small subset of UMLS triples, is about 0.928.
+- The Precison on the current testing data, which is a small subset of UMLS triples, is about **0.928**.
 
 ## Statistics:
 
