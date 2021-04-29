@@ -1,7 +1,7 @@
 # Universal Knowledge Graph based Biomedical Knowledge Enlargment
 ## Introduction:
     
-In order to support biomedical research on COVID-19 with information science, we are developing an AI system that automatically analyzes big data from 336K academic abstracts and 160 papers related to COVID-19 and other 30 million abstracts of biomedical papers. This system significantly augments the existing knowledge base by automatically extracting the vast amount of information and knowledge that may be relevant to COVID-19 from the big data. We also infer potential relationship among gene/protein, drug, disease , symptoms, enzyme, etc. based on the associations among the large mount of knowledge and reference relationships between papers. The system presents such information to researchers and supports access to academic papers, knowledge and a "big picture" that would contribute to the **academic** research on mechanism, drugs repurposing, diagnostics, etc.
+In order to support biomedical research on COVID-19 with information science, we are developing an AI system that automatically analyzes big data from 336K academic abstracts and 160 papers related to COVID-19 and other 30 million abstracts of biomedical papers. This system significantly augments the existing knowledge base by automatically extracting the vast amount of information and knowledge that may be relevant to COVID-19 from the big data. We also infer potential relationship among gene/protein, drug, disease , symptoms, enzyme, etc. based on the associations among the large mount of knowledge and papers. The system extracts such information to researchers and supports access to academic papers, knowledge and a "big picture" that would contribute to the **academic** research on mechanism, drugs repurposing, diagnostics, etc.
 
 ## Extracted Biomedical Triples:
 
@@ -48,7 +48,7 @@ In order to support biomedical research on COVID-19 with information science, we
 Our system hypothesizes that "COVID-19 may_be_treated_by Chloroquine". The hypothesis is proposed based on multiple reasoning paths such as shown above. The hypothesis is recently shown to be promising by the [paper](https://www.kansensho.or.jp/uploads/files/topics/2019ncov/covid19_casereport_200519_2.pdf), which is published on [The Japanese Association for Infectious Diseases](http://www.kansensho.or.jp).
 
 ### Disclaimer:
-The dataset is not for clinical usage! The dataset is ONLY for academic use, with no warranty or liability.
+The dataset is NOT for clinical usage! The dataset is ONLY for academic use, with no warranty or liability.
 
 ## Algorithm:
 
@@ -61,9 +61,14 @@ To predict potentially related candidate concepts and generate the supporting ex
 
 Next, our system relies on a state-of-the-art Tail Prediction Model (Takahashi et al., 2018) that learns to project **Universal Knowledge Graph** into a same continuous vector space and predicts the candidate concepts based on the vector calculation. 
 
-Then, our system searches the multi-hop reasoning paths that connect the candidate and target concept over the **Universal Knowledge Graph**. Finally, our system applies a new Relation Prediction Model (Dai et al., 2019, 2021) to classify (or reexamine) the relationship (a.k.a, relation classification) between target and candidate concepts based on the multi-hop reasoning paths and evaluate the contribution of each path via a Knowledge Graph based attention mechanism.
+Then, our system searches the multi-hop reasoning paths that connect the candidate and target concept over the **Universal Knowledge Graph**. Finally, our system applies a new sate-of-the-art Relation Extraction Model (Dai et al., 2019, 2021) to classify (or reexamine) the relationship (a.k.a, relation classification) between target and candidate concepts based on the multi-hop reasoning paths and evaluate the contribution of each path via a Knowledge Graph based attention mechanism.
 
 ### Evalute the performance of the relation classification:
+- Dependencies
+    - python = 2.x
+    - tensorflow = 1.9.0
+    - numpy
+    - sklearn
 - Download the [Dataset](http://www.cl.ecei.tohoku.ac.jp/~dq/Data_for_M_CREST/RE_data/origin_data.zip) and unzip it in the main directory.
 - Then, run the following commands for preprocessing, or you can download the preprocessed dataset from here: [part1](http://www.cl.ecei.tohoku.ac.jp/~dq/Data_for_M_CREST/RE_data/biomedical_part1.zip) and p[art2](http://www.cl.ecei.tohoku.ac.jp/~dq/Data_for_M_CREST/RE_data/biomedical_part2.zip), and unzip their contents under `biomedical_part1` and `biomedical_part2` directory respectively. 
 ~~~
