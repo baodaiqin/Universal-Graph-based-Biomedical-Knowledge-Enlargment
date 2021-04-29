@@ -5,7 +5,7 @@ import sys
 from time import time
 from collections import OrderedDict
 
-data_path = './origin_data_type_year/'
+data_path = './origin_data/'
 export_path = './biomedical_part1/'
 
 maxlen = 120
