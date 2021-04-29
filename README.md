@@ -47,6 +47,9 @@ In order to support biomedical research on COVID-19 with information science, we
 ### An example:
 Our system hypothesizes that "COVID-19 may_be_treated_by Chloroquine". The hypothesis is proposed based on multiple reasoning paths such as shown above. The hypothesis is recently shown to be promising by the [paper](https://www.kansensho.or.jp/uploads/files/topics/2019ncov/covid19_casereport_200519_2.pdf), which is published on [The Japanese Association for Infectious Diseases](http://www.kansensho.or.jp).
 
+### Disclaimer:
+The dataset is not for clinical usage! The dataset is ONLY for academic use, with no warranty or liability.
+
 ## Algorithm:
 
 To identify biomedical concepts in textual corpus, we apply [Scispacy](https://allenai.github.io/scispacy/), a state-of-the-art biomedical named entity recognizer, to detect UMLS entities in text. 
@@ -92,6 +95,3 @@ This project is led by [Kentaro Inui](http://www.cl.ecei.tohoku.ac.jp/~inui/) wi
 - Ryo Takahashi, Ran Tian and Kentaro Inui. 2018. Interpretable and Compositional Relation Learning by Joint Training with an Autoencoder. In *Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics*(Volume 1: Long Papers), volume 1, pages 2148–2159.
 - Qin Dai, Naoya Inoue, Paul Reisert, Ryo Takahashi and Kentaro Inui. 2019. Incorporating Chains of Reasoning over Knowledge Graph for Distantly Supervised Biomedical Knowledge Acquisition. In *Proceedings of the 33rd Pacific Asia Conference on Language, Information and Computation (PACLIC33)*, pages 19-28.
 - Qin Dai, Naoya Inoue, Ryo Takahashi and Kentaro Inui. 2021. Two Training Strategies for Improving Relation Extraction over Universal Graph. In *Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics*, pages 3673–3684.
-
-## Disclaimer:
-The dataset is not for clinical usage! The dataset is ONLY for academic use, with no warranty or liability.
