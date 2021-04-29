@@ -58,6 +58,22 @@ Next, our system relies on a state-of-the-art Tail Prediction Model (Takahashi e
 
 Then, our system searches the multi-hop reasoning paths that connect the candidate and target concept over the **Universal Knowledge Graph**. Finally, our system applies a new Relation Prediction Model (Dai et al., 2019, 2021) to classify (or reexamine) the relationship between target and candidate concepts based on the multi-hop reasoning paths and evaluate the contribution of each path via a Knowledge Graph based attention mechanism.
 
+## Evalute the performance of the relation classification:
+- Download the dataset and unzip it.
+- Then, run the following commands for preprocessing, or you can download the preprocessed dataset from here: part1 and part2, and unzip their contents under `biomedical_part1` and `biomedical_part2` directory respectively. 
+~~~
+python2 initialize_biomedical_part1.py
+python2 initialize_biomedical_part2.py
+~~~
+- Download our pretrained model's parameters from Data and put them under `ugdsre_biomedical/model`, and test the model via following command.
+~~~
+cd ugdsre_biomedical
+CUDA_VISIBLE_DEVICES=0 python test_baseline.py testing
+~~~
+
+
+
+
 ## Statistics:
 
 | Corpus | Abstract | Paper | Textual Relation |
