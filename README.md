@@ -6,7 +6,12 @@ In order to support biomedical research on COVID-19 with information science, we
 ## Extracted Biomedical Triples:
 
 - The extracted biomedical triples as well as corresponding reasoning evidences are available here.
-- The format of the dataset is as follows.
+- The format of the dataset is as follows, where, 
+    - "relation" is the predicted relationshop between "head" and "tail", 
+    - "evidences" contain multiple multi-HOP reasoning paths, 
+    - each path is annotated with its attention score "ATT",
+    - each "HOP" represents a relationship between an entity pair (e.g., "COVID-19" and "D27_B_cells", each entity is marked by its UMLS UCI (e.g., "///C1824668"), HOPs are connected by a intermediate entity (e.g., "C1824668" is the entity connecting "HOP1" and "HOP2"),
+    - each "PMID" and "PCMID" are attached to each "HOP" for further checking.
 
 ~~~
 [
@@ -20,7 +25,7 @@ In order to support biomedical research on COVID-19 with information science, we
         "evidences": [
                         {
                         "ATT": 0.2613531
-                        "HOP1": 'moderate and Severe COVID-19///C0000000#ent patients have a higher number of CD21 \u2212 CD27_\u2212_B_cells///C1824668#ent HDs .'
+                        "HOP1": 'moderate and Severe COVID-19///C0000000#ent patients have a higher number of CD21 D27_B_cells///C1824668#ent HDs .'
                         "PMID1": ''
                         "PCMID1": 'PMC7843151'
                         "HOP2":'CD27///C1824668#ent is a transmembrane disulfide-linked 55-kD homodimer present on most peripheral_blood_T_cells///C0005773#ent on a subset'
