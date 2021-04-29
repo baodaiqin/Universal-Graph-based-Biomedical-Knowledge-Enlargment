@@ -5,7 +5,7 @@ In order to support biomedical research on COVID-19 with information science, we
 
 ## Extracted Biomedical Triples:
 
-- The extracted biomedical triples as well as corresponding reasoning evidences are available here.
+- The extracted biomedical triples as well as corresponding reasoning evidences are available here, where "predicted_triplets_with_evidences_1~3.json" contain COVID-19 related triples.
 - The format of the dataset is as follows, where, 
     - "relation" is the predicted relationshop between "head" and "tail", 
     - "evidences" contain multiple multi-HOP reasoning paths, 
