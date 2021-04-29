@@ -129,12 +129,7 @@ def main(_):
 
 	f = open('results.txt','w')
 	f.write('iteration\taverage precision\n')
-	for iters in range(25, 26):
-		print iters
-                if pre_or_not == 'ranking':
-		        saver.restore(sess, './model_saved/cnn13-201000')
-                if pre_or_not == 'ranking_pretrain':
-                        saver.restore(sess, './model_saved/cnn13-402000')
+	for iters in range(20, 21):
                 if pre_or_not == 'testing':
                         saver.restore(sess, './model/cnn_pretrain_ranking_20')
 		stack_output = []
@@ -207,13 +202,10 @@ def main(_):
                 
 		average_precision = average_precision_score(exclude_na_flatten_label,exclude_na_flatten_output, average = "micro")
                 
-                if pre_or_not == 'ranking':
-		        np.save('./result/'+FLAGS.model+'+sent_ug_ranking_prob'+'.npy', exclude_na_flatten_output)
-                        np.save('./result/'+FLAGS.model+'+sent_ug_ranking_label'+'.npy',exclude_na_flatten_label)
-                elif pre_or_not == 'ranking_pretrain':
-                        np.save('./result/'+FLAGS.model+'+sen_ug_ranking_pretrain_prob'+'.npy', exclude_na_flatten_output)
-                        np.save('./result/'+FLAGS.model+'+sen_ug_ranking_pretrain_label'+'.npy',exclude_na_flatten_label)
-                        
+                if pre_or_not == 'testing':
+		        np.save('./result/'+FLAGS.model+'+sent_ug_testing_prob'+'.npy', exclude_na_flatten_output)
+                        np.save('./result/'+FLAGS.model+'+sent_ug_testing_label'+'.npy',exclude_na_flatten_label)
+		                        
 		print 'AUC: '+str(average_precision)
 		f.write(str(average_precision)+'\n')
 	f.close()
