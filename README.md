@@ -10,7 +10,7 @@ In order to support biomedical research on COVID-19 with information science, we
     - "relation" is the predicted relationshop between "head" and "tail", 
     - "evidences" contain multiple multi-HOP reasoning paths, 
     - each path is annotated with its attention score "ATT",
-    - each "HOP" represents a relationship between an entity pair (e.g., "COVID-19" and "D27_B_cells", 
+    - each "HOP" represents a relationship between an entity pair (e.g., "COVID-19" and "D27_B_cells"), 
     - each entity is marked by its UMLS UCI (e.g., "D27_B_cells///C1824668"), 
     - HOPs are connected by an intermediate entity (e.g., "C1824668" is the intermediate entity connecting "HOP1" and "HOP2"),
     - "PMID" and "PCMID" are attached to each "HOP" for further the source paper.
