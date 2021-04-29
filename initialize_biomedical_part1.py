@@ -438,10 +438,7 @@ if __name__ == '__main__':
     fout_vec = open(sfout_vec, 'wb')
     vec = np.load(data_path + 'vec.npy')
     np.save(sfout_vec, vec)
-    #sort_files('train0', 1)
-    #sort_files('test0', 1)
-
-    
+	
     data_type = 'training'
     print 'Initializing training data ...'
     if data_type == 'training':
