@@ -5,7 +5,7 @@ In order to support biomedical research on COVID-19 with information science, we
 
 ## Extracted Biomedical Triples:
 
-- The extracted biomedical triples as well as corresponding reasoning evidences are available [here](http://www.cl.ecei.tohoku.ac.jp/~dq/Data_for_M_CREST/KB_data/), where "predicted_triplets_with_evidences_1~3.json" contain COVID-19 related triples.
+- The extracted biomedical triples as well as corresponding reasoning evidences are available [HERE](http://www.cl.ecei.tohoku.ac.jp/~dq/Data_for_M_CREST/KB_data/), where "predicted_triplets_with_evidences_1~3.json" contain COVID-19 related triples.
 - The format of the dataset is as follows, where, 
     - "relation" is the predicted relationshop between "head" and "tail", 
     - "evidences" contain multiple multi-HOP reasoning paths, 
@@ -90,3 +90,6 @@ This project is led by [Kentaro Inui](http://www.cl.ecei.tohoku.ac.jp/~inui/) wi
 - Ryo Takahashi, Ran Tian and Kentaro Inui. 2018. Interpretable and Compositional Relation Learning by Joint Training with an Autoencoder. In *Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics*(Volume 1: Long Papers), volume 1, pages 2148–2159.
 - Qin Dai, Naoya Inoue, Paul Reisert, Ryo Takahashi and Kentaro Inui. 2019. Incorporating Chains of Reasoning over Knowledge Graph for Distantly Supervised Biomedical Knowledge Acquisition. In *Proceedings of the 33rd Pacific Asia Conference on Language, Information and Computation (PACLIC33)*, pages 19-28.
 - Qin Dai, Naoya Inoue, Ryo Takahashi and Kentaro Inui. 2021. Two Training Strategies for Improving Relation Extraction over Universal Graph. In *Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics*, pages 3673–3684.
+
+### Disclaimer:
+The dataset is not for clinical usage! The dataset is ONLY for academic use, with no warranty or liability.
