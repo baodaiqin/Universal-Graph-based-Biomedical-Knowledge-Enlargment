@@ -16,6 +16,11 @@ Next, our system relies on a state-of-the-art Tail Prediction Model (Takahashi e
 
 Then, our system searches the multi-hop reasoning paths that connect the candidate and target concept over the **Universal Knowledge Graph**. Finally, our system applies a new Relation Prediction Model (Dai et al., 2019, 2021) to classify (or reexamine) the relationship between target and candidate concepts based on the multi-hop reasoning paths and evaluate the contribution of each path via a Knowledge Graph based attention mechanism.
 
+| Corpus | Abstract | Paper | Textual relation |
+|---|---|---|---|---|
+|CORD19| 336029 | 160656 | 2087918 |
+|MEDLINE20| 30420660(19845316) | - | 16058533 |
+
 ## Members:
 This project is led by [Kentaro Inui](http://www.cl.ecei.tohoku.ac.jp/~inui/) with a team of members: [Qin Dai](http://www.cl.ecei.tohoku.ac.jp/~dq/) and [Ryo Takahashi](https://reiyw.com/), from the Tohoku University, and is supported by the JST CREST Project on [Scientific Paper Analysis](https://www.jst.go.jp/kisoken/crest/en/project/44/15656596.html) (Research Director:[Yuji Matsumoto](https://cl.naist.jp/staff/matsu/home-e.html)). Special thanks to [Yoshimasa Tsuruoka](https://www.logos.ic.i.u-tokyo.ac.jp/~tsuruoka/) and [Akiko Aizawa](https://www.nii.ac.jp/en/faculty/digital_content/aizawa_akiko/) for their help and advice in building the system.
 
