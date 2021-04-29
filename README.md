@@ -50,7 +50,7 @@ Our system hypothesizes that "COVID-19 may_be_treated_by Chloroquine". The hypot
 ### Disclaimer:
 The dataset is NOT for clinical usage! The dataset is ONLY for academic use, with no warranty or liability.
 
-## Algorithm:
+## Framework:
 
 To identify biomedical concepts in textual corpus, we apply [Scispacy](https://allenai.github.io/scispacy/), a state-of-the-art biomedical named entity recognizer, to detect UMLS entities in text. 
 
