@@ -63,7 +63,7 @@ Next, our system relies on a state-of-the-art Tail Prediction Model (Takahashi e
 
 Then, our system searches the multi-hop reasoning paths that connect the candidate and target concept over the **Universal Knowledge Graph**. Finally, our system applies a new sate-of-the-art Relation Extraction Model (Dai et al., 2019, 2021) to classify (or reexamine) the relationship (a.k.a., relation classification) between target and candidate concepts based on the multi-hop reasoning paths and evaluate the contribution of each path via a Knowledge Graph based attention mechanism.
 
-### Evalute the performance of the relation classification:
+### Evaluate the performance of the relation classification:
 - Dependencies
     - python = 2.x
     - tensorflow = 1.9.0
