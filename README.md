@@ -62,7 +62,7 @@ To predict potentially related candidate concepts and generate the supporting ex
 
 Next, our system relies on a state-of-the-art Tail Prediction Model (Takahashi et al., 2018) that learns to project **Universal Knowledge Graph** into a same continuous vector space and predicts the candidate concepts based on the vector calculation. 
 
-Then, our system searches the multi-hop reasoning paths that connect the candidate and target concept over the **Universal Knowledge Graph**. Finally, our system applies a new sate-of-the-art Relation Extraction Model (Dai et al., 2019, 2021) to classify (or reexamine) the relationship (a.k.a., relation classification) between target and candidate concepts based on the multiple multi-hop reasoning paths and evaluate the contribution and effectiveness of each path via an attention mechanism.
+Then, our system searches the multi-hop reasoning paths that connect the candidate and target concept over the **Universal Knowledge Graph**. Finally, our system applies a new sate-of-the-art Relation Prediction Model (Dai et al., 2019, 2021) to classify (or reexamine) the relationship (a.k.a., relation classification) between target and candidate concepts based on the multiple multi-hop reasoning paths and evaluate the contribution and effectiveness of each path via an attention mechanism.
 
 ### Evaluate the performance of the relation classification:
 - Dependencies
