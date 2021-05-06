@@ -95,7 +95,7 @@ CUDA_VISIBLE_DEVICES=0 python test_baseline.py testing
 |3,659,163|68,616|
 
 ## Members:
-This project is led by [Kentaro Inui](http://www.cl.ecei.tohoku.ac.jp/~inui/) with a team of members: [Qin Dai](http://www.cl.ecei.tohoku.ac.jp/~dq/) and [Ryo Takahashi](https://reiyw.com/), from the Tohoku University, and is supported by the JST CREST Project on [Scientific Paper Analysis](https://www.jst.go.jp/kisoken/crest/en/project/44/15656596.html) (Research Director:[Yuji Matsumoto](https://cl.naist.jp/staff/matsu/home-e.html)). Special thanks to [Yoshimasa Tsuruoka](https://www.logos.ic.i.u-tokyo.ac.jp/~tsuruoka/) and [Akiko Aizawa](https://www.nii.ac.jp/en/faculty/digital_content/aizawa_akiko/) for their help and advice in building the system.
+This project is led by [Kentaro Inui](http://www.cl.ecei.tohoku.ac.jp/~inui/) with a team of members: [Qin Dai](http://www.cl.ecei.tohoku.ac.jp/~dq/) and [Ryo Takahashi](https://reiyw.com/), from the [NLP LAB of Tohoku University](https://www.nlp.ecei.tohoku.ac.jp/), and is supported by the JST CREST Project on [Scientific Paper Analysis](https://www.jst.go.jp/kisoken/crest/en/project/44/15656596.html) (Research Director:[Yuji Matsumoto](https://cl.naist.jp/staff/matsu/home-e.html)). Special thanks to [Yoshimasa Tsuruoka](https://www.logos.ic.i.u-tokyo.ac.jp/~tsuruoka/) and [Akiko Aizawa](https://www.nii.ac.jp/en/faculty/digital_content/aizawa_akiko/) for their help and advice in building the system.
 
 ### References:
 - Ryo Takahashi, Ran Tian and Kentaro Inui. 2018. Interpretable and Compositional Relation Learning by Joint Training with an Autoencoder. In *Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics*(Volume 1: Long Papers), volume 1, pages 2148–2159.
